@@ -1,1 +1,36 @@
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
 
+h1, h2, h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.experience-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.connect-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
