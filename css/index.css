@@ -29,8 +29,18 @@ h1 {
     margin: 5px 0;
 }
 
+.experience-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .connect-link {
     text-decoration: none;
     color: #555;
     font-weight: bold;
+}
+
+.connect-section {
+  display: flex;
+  justify-content: space-around;
 }
