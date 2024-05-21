@@ -1,4 +1,4 @@
-rlet today = new Date();
+let today = new Date();
 
 let thisYear = today.getFullYear();
 
