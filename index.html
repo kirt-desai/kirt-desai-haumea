@@ -1,52 +1,112 @@
+Here is the corrected version of your HTML document with proper structure, closing tags, and corrected navigation and section IDs:
+
+```html
 <!DOCTYPE html>
 <html>
   <head>
-    <h1> Kirtan Desai</h1>
-    <link rel = "stylesheet" href = "css/index.css">
+    <title>Kirtan Desai</title>
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+    <header>
+      <h1>Kirtan Desai</h1>
+    </header>
     <nav>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#connect">Connect</a></li>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
     </nav>
-    <section id="About">
-<h2> About </h2>
-<p> I’m Kirtan Desai I’m currently a sophomore at UTSA, majoring in cybersecurity. My experience consists of working as an intern at Code2College Labs as a programmer of multiple languages and my other internship as a Financial Operations intern at BigCommerce. The skills and knowledge I taken away from these experiences allows me to be a worker that endeavors to help increase productivity and collaboration in my future career.  I’m hardworking, driven, and a quick thinker about the problem in front of me in a work environment. </p>
-</section>
-<section id="Experience">
-<h2> Experience </h2>
-  <div class="experience-section">   
-<ul>
-  <li> E-commerce website </li>
-  <li> Database </li>
-  <li> JavaScript project </li>
-  <li> Github project </li>
-  <li> Linux project </li>
-</ul>
-  </div> 
-  </section>
-<section id="projects">
- <h2>Projects</h2>
+    <section id="about">
+      <h2>About</h2>
+      <p>I’m Kirtan Desai I’m currently a sophomore at UTSA, majoring in cybersecurity. My experience consists of working as an intern at Code2College Labs as a programmer of multiple languages and my other internship as a Financial Operations intern at BigCommerce. The skills and knowledge I have taken away from these experiences allows me to be a worker that endeavors to help increase productivity and collaboration in my future career. I’m hardworking, driven, and a quick thinker about the problem in front of me in a work environment.</p>
     </section>
-<section id="Connect">
- <h2> Connect </h2>
-<div class="connect-section">
-<ul>
-  <li><a kirtandesai9@gmail.com </a>/li>
-  <li><a https://github.com/kirt-desai </a>/li>
-  <li><a https://www.linkedin.com/in/kirtdesai/ </a>/li>
-</ul>
-</div>
-  </section>
- <section id="skills">
-  <h2>Skills</h2>
-    <ul></ul>
-  </section>
-    <script src="js/index.js">
-      
-    </script>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-section">   
+        <ul>
+          <li>E-commerce website</li>
+          <li>Database</li>
+          <li>JavaScript project</li>
+          <li>GitHub project</li>
+          <li>Linux project</li>
+        </ul>
+      </div> 
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+    </section>
+    <section id="connect">
+      <h2>Connect</h2>
+      <div class="connect-section">
+        <ul>
+          <li><a href="mailto:kirtandesai9@gmail.com">kirtandesai9@gmail.com</a></li>
+          <li><a href="https://github.com/kirt-desai">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/kirtdesai/">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul></ul>
+    </section>
+    <script src="js/index.js"></script>
   </body>
 </html>
+```
+
+### Key Changes:
+1. **Moved the `<h1>` tag into a `<header>` element within the `<body>` and added a `<title>` tag in the `<head>` section:**
+    ```html
+    <header>
+      <h1>Kirtan Desai</h1>
+    </header>
+    ```
+
+2. **Wrapped the navigation list items in an unordered list (`<ul>`):**
+    ```html
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+    ```
+
+3. **Corrected the ID reference for the "About" section and fixed the text content:**
+    ```html
+    <section id="about">
+      <h2>About</h2>
+      <p>I’m Kirtan Desai I’m currently a sophomore at UTSA, majoring in cybersecurity. My experience consists of working as an intern at Code2College Labs as a programmer of multiple languages and my other internship as a Financial Operations intern at BigCommerce. The skills and knowledge I have taken away from these experiences allows me to be a worker that endeavors to help increase productivity and collaboration in my future career. I’m hardworking, driven, and a quick thinker about the problem in front of me in a work environment.</p>
+    </section>
+    ```
+
+4. **Fixed the incorrect `<a>` tags in the "Connect" section:**
+    ```html
+    <section id="connect">
+      <h2>Connect</h2>
+      <div class="connect-section">
+        <ul>
+          <li><a href="mailto:kirtandesai9@gmail.com">kirtandesai9@gmail.com</a></li>
+          <li><a href="https://github.com/kirt-desai">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/kirtdesai/">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+    ```
+
+5. **Ensured the "Skills" section has an empty unordered list to be populated by JavaScript:**
+    ```html
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul></ul>
+    </section>
+    ```
+
+With these changes, your HTML should be properly structured and ready for your JavaScript to interact with it.
