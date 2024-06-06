@@ -21,5 +21,4 @@ for (let i = 0; i < skills.length; i++) {
 }
 
 const body = document.querySelector('body'); 
-const footerChild = body.querySelector('myFooter');
 body.appendChild(myFooter); 
