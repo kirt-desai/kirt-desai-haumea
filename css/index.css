@@ -30,8 +30,8 @@ h1 {
 }
 
 .experience-section {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .connect-link {
@@ -39,56 +39,59 @@ h1 {
     color: #555;
     font-weight: bold;
 }
+
 .connect-section {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* style for desktop devices */
+/* Style for desktop devices */
 @media only screen and (min-width: 990px) {
-  body {
-    font-size: 16px;
-    width: 80%;
-    margin: auto;
-  }
-  h1 {
-    font-size: 20px;
-    color: #333;
-  }
-
-  p {
-  font-family: verdana;
-  font-size: 28px;
+    body {
+        font-size: 16px;
+        width: 80%;
+        margin: auto;
+    }
+    h1 {
+        font-size: 20px;
+        color: #333;
+    }
+    p {
+        font-family: verdana;
+        font-size: 28px;
+    }
 }
-/* style for tablet devices */
+
+/* Style for tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  body {
-    font-size: 14px;
-    width: 90%;
-    margin: auto;
-  }
-  h1 {
-    font-size: 18px;
-    color: #555;
-  }
-  p {
-  font-family: verdana;
-  font-size: 20px;
+    body {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
+    h1 {
+        font-size: 18px;
+        color: #555;
+    }
+    p {
+        font-family: verdana;
+        font-size: 20px;
+    }
 }
 
-/* style for mobile devices */
+/* Style for mobile devices */
 @media only screen and (max-width: 760px) {
-  body {
-    font-size: 12px;
-    width: 100%;
-    margin: 0;
-  }
-  h1 {
-    font-size: 14px;
-    color: #777;
-  }
-  p {
-  font-family: verdana;
-  font-size: 18px;
-}
+    body {
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+    }
+    h1 {
+        font-size: 14px;
+        color: #777;
+    }
+    p {
+        font-family: verdana;
+        font-size: 18px;
+    }
 }
