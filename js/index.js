@@ -1,16 +1,17 @@
 let today = new Date();
+
 let thisYear = today.getFullYear();
 
 let footer = document.createElement('footer');
-console.log(footer);
+console.log(footer)
 let copyright = document.createElement('p');
-console.log(copyright);
+console.log(copyright)
 copyright.innerHTML = `© YourName ${thisYear}`;
-console.log(copyright);
+console.log(copyright)
 footer.appendChild(copyright);
 
 const skills = ["JavaScript", "HTML", "CSS", "Python", "GitHub"];
-const skillsSection = document.getElementById("skills");
+const skillsSection = document.getElementById("skillsSection");
 const skillsList = skillsSection.querySelector("ul");
 
 for (let i = 0; i < skills.length; i++) {
@@ -19,8 +20,9 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }
 
-const body = document.querySelector('body');
-body.appendChild(footer);
+const body = document.querySelector('body'); 
+const footerChild = body.querySelector('myFooter');
+body.appendChild(myFooter); 
 
 const messageForm = document.querySelector('form[name="leave_message"]');
 
@@ -36,8 +38,8 @@ messageForm.addEventListener('submit', (event) => {
     let messageList = messageSection.querySelector('ul');
     let newMessage = document.createElement('li');
     newMessage.innerHTML = `
-        <a href="mailto:${userEmail}">${usersName}</a>
-        <span>${messageContent}</span>
+        <a href="mailto:${usersEmail}">${usersName}</a>
+        <span>${usersMessage}</span>
     `;
     let removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
@@ -49,5 +51,5 @@ messageForm.addEventListener('submit', (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
     messageForm.reset();
-});
+    });
 
